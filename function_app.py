@@ -5,7 +5,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
 @app.route(route="funcAppGitAction")
 def funcAppGitAction(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request.')
+    logging.info('hii!!! Python HTTP trigger function processed a request.')
 
     name = req.params.get('name')
     if not name:
